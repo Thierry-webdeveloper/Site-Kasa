@@ -1,0 +1,50 @@
+// Largeur maximale du contenu
+$max-width: 1440px;
+
+// Breakpoints
+$breakpoint-desktop: 1440px;
+$breakpoint-mobile: 375px;
+
+// Couleurs
+$color-primary: #FF6060;
+$color-background: #FFFFFF;
+
+// Espacements Body
+$body-margin-top-desktop: 45px;
+$body-margin-top-mobile: 20px;
+$body-gap-desktop: 50px;
+$body-gap-mobile: 27px;
+
+// Header Desktop
+$header-padding-desktop: 100px;
+$header-logo-width-desktop: 210px;
+$header-logo-height-desktop: 68px;
+$header-nav-margin-desktop: 17px;
+$header-nav-gap-desktop: 57px;
+
+// Header Mobile
+$header-padding-mobile: 20px;
+$header-logo-width-mobile: 145px;
+$header-logo-height-mobile: 47px;
+$header-nav-margin-mobile: 15px;
+$header-nav-gap-mobile: 26px;
+
+// Typographie navigation
+$font-family: 'Montserrat', sans-serif;
+$font-weight-medium: 500;
+$font-size-nav-desktop: 24px;
+$font-size-nav-mobile: 12px;
+$line-height: 143%;
+$color-text: #000000;
+
+// Footer
+$footer-height: 209px;
+$footer-background: #000000;
+$footer-logo-width: 122px;
+$footer-logo-height: 39px;
+$footer-logo-margin-top: 66px;
+$footer-text-height: 46px;
+$footer-text-margin: 29px;
+$footer-text-color: #FFFFFF;
+$font-size-footer-desktop: 24px;
+$font-size-footer-mobile: 12px;

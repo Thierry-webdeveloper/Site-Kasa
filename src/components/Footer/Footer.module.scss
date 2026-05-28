@@ -1,0 +1,36 @@
+@use '../../styles/variables' as *;
+
+.footer {
+  width: 100%;
+  height: $footer-height;
+  background-color: $footer-background;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo {
+  width: $footer-logo-width;
+  height: $footer-logo-height;
+  margin-top: $footer-logo-margin-top;
+  display: block;
+}
+
+.text {
+  height: $footer-text-height;
+  margin-top: $footer-text-margin;
+  margin-bottom: $footer-text-margin;
+  font-family: $font-family;
+  font-weight: $font-weight-medium;
+  font-size: $font-size-footer-desktop;
+  line-height: $line-height;
+  color: $footer-text-color;
+  display: flex;
+  align-items: flex-end;
+
+  @media (max-width: 768px) {
+    font-size: $font-size-footer-mobile;
+    margin-top: 0;
+  }
+}

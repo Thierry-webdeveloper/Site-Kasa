@@ -1,0 +1,25 @@
+@use './variables' as *;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-family;
+  font-weight: $font-weight-medium;
+  color: $color-text;
+  background-color: $color-background;
+  display: flex;
+  flex-direction: column;
+  max-width: $breakpoint-desktop;
+  margin: 0 auto;
+  margin-top: $body-margin-top-desktop;
+  gap: $body-gap-desktop;
+
+  @media (max-width: 768px) {
+    margin-top: $body-margin-top-mobile;
+    gap: $body-gap-mobile;
+  }
+}

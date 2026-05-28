@@ -1,0 +1,55 @@
+@use '../../styles/variables' as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: $header-logo-height-desktop;
+  padding: 0 $header-padding-desktop;
+
+  @media (max-width: 768px) {
+    height: $header-logo-height-mobile;
+    padding: 0 $header-padding-mobile;
+  }
+}
+
+.logo {
+  width: $header-logo-width-desktop;
+  height: $header-logo-height-desktop;
+
+  @media (max-width: 768px) {
+    width: $header-logo-width-mobile;
+    height: $header-logo-height-mobile;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: $header-nav-gap-desktop;
+
+  @media (max-width: 768px) {
+    gap: $header-nav-gap-mobile;
+  }
+}
+
+.navLink {
+  display: block;
+  margin-top: $header-nav-margin-desktop;
+  margin-bottom: $header-nav-margin-desktop;
+  color: $color-text;
+  text-decoration: none;
+  font-size: $font-size-nav-desktop;
+  line-height: $line-height;
+
+  @media (max-width: 768px) {
+    margin-top: $header-nav-margin-mobile;
+    margin-bottom: $header-nav-margin-mobile;
+    font-size: $font-size-nav-mobile;
+    text-transform: uppercase;
+  }
+}
+
+.active {
+  text-decoration: underline;
+}
