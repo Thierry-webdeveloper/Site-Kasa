@@ -1,0 +1,19 @@
+@use '../../styles/variables' as *;
+
+.gallery {
+  background-color: $gallery-background-desktop;
+  border-radius: $gallery-border-radius-desktop;
+  padding: $gallery-padding-desktop;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: $gallery-column-gap-desktop;
+  row-gap: $gallery-row-gap-desktop;
+
+  @media (max-width: 768px) {
+    background-color: $color-background;
+    border-radius: 0;
+    padding: 0;
+    grid-template-columns: 1fr;
+    gap: $gallery-gap-mobile;
+  }
+}

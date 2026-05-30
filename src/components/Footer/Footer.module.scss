@@ -32,5 +32,7 @@
   @media (max-width: 768px) {
     font-size: $font-size-footer-mobile;
     margin-top: 0;
+    text-align: center;
+    max-width: 30%;
   }
 }

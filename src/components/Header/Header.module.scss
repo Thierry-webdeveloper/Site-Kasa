@@ -5,11 +5,11 @@
   align-items: center;
   justify-content: space-between;
   height: $header-logo-height-desktop;
-  padding: 0 $header-padding-desktop;
+  padding: 0 $body-padding-desktop;
 
   @media (max-width: 768px) {
     height: $header-logo-height-mobile;
-    padding: 0 $header-padding-mobile;
+    padding: 0 $body-padding-mobile;
   }
 }
 
@@ -52,4 +52,5 @@
 
 .active {
   text-decoration: underline;
+  cursor: default;
 }

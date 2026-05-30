@@ -7,23 +7,25 @@ $breakpoint-mobile: 375px;
 
 // Couleurs
 $color-primary: #FF6060;
+$color-white: #FFFFFF;
+$color-black: #000000;
 $color-background: #FFFFFF;
 
 // Espacements Body
 $body-margin-top-desktop: 45px;
 $body-margin-top-mobile: 20px;
+$body-padding-desktop: 100px;
+$body-padding-mobile: 20px;
 $body-gap-desktop: 50px;
 $body-gap-mobile: 27px;
 
 // Header Desktop
-$header-padding-desktop: 100px;
 $header-logo-width-desktop: 210px;
 $header-logo-height-desktop: 68px;
 $header-nav-margin-desktop: 17px;
 $header-nav-gap-desktop: 57px;
 
 // Header Mobile
-$header-padding-mobile: 20px;
 $header-logo-width-mobile: 145px;
 $header-logo-height-mobile: 47px;
 $header-nav-margin-mobile: 15px;
@@ -48,3 +50,34 @@ $footer-text-margin: 29px;
 $footer-text-color: #FFFFFF;
 $font-size-footer-desktop: 24px;
 $font-size-footer-mobile: 12px;
+
+// Bannière Desktop
+$banner-height-desktop: 223px;
+$banner-border-radius-desktop: 25px;
+$banner-font-size-desktop: 48px;
+
+// Bannière Mobile
+$banner-height-mobile: 111px;
+$banner-border-radius-mobile: 10px;
+$banner-font-size-mobile: 24px;
+$banner-line-height-mobile: 100%;
+
+// Home
+$home-gap-desktop: 43px;
+$home-gap-mobile: 22px;
+
+// Gallery Desktop
+$gallery-background-desktop: #F6F6F6;
+$gallery-border-radius-desktop: 25px;
+$gallery-padding-desktop: 50px;
+$gallery-column-gap-desktop: 60px;
+$gallery-row-gap-desktop: 50px;
+
+// Gallery Mobile
+$gallery-gap-mobile: 20px;
+
+// Cards Desktop
+$card-height-desktop: 340px;
+
+// Cards Mobile
+$card-height-mobile: 255px;

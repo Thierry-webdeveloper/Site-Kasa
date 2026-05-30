@@ -5,7 +5,6 @@ import styles from './Header.module.scss'
 function Header() {
   return (
     <header className={styles.header}>
-      {/* <img src={logo} alt="Kasa" /> */}
       <NavLink to="/"><img src={logo} alt="Kasa" className={styles.logo} /></NavLink>
       <nav className={styles.nav}>
         <NavLink
