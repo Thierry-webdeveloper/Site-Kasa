@@ -3,9 +3,4 @@
 .layout {
   display: flex;
   flex-direction: column;
-  gap: $body-gap-desktop;
-
-  @media (max-width: 768px) {
-    gap: $body-gap-mobile;
-  }
 }

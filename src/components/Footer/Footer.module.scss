@@ -29,7 +29,7 @@
   display: flex;
   align-items: flex-end;
 
-  @media (max-width: 768px) {
+  @media (max-width: $breakpoint-mobile) {
     font-size: $font-size-footer-mobile;
     margin-top: 0;
     text-align: center;

@@ -9,7 +9,7 @@
   column-gap: $gallery-column-gap-desktop;
   row-gap: $gallery-row-gap-desktop;
 
-  @media (max-width: 768px) {
+  @media (max-width: $breakpoint-mobile) {
     background-color: $color-background;
     border-radius: 0;
     padding: 0;

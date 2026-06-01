@@ -4,11 +4,10 @@
   position: relative;
   height: $banner-height-desktop;
   border-radius: $banner-border-radius-desktop;
-  border: 1px solid $color-black;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   overflow: hidden;
 
-  @media (max-width: 768px) {
+  @media (max-width: $breakpoint-mobile) {
     height: $banner-height-mobile;
     border-radius: $banner-border-radius-mobile;
   }
@@ -34,7 +33,7 @@
   align-items: center;
   justify-content: center;
   margin: 0;
-  padding: 0 $body-padding-desktop;
+  padding: $banner-padding-desktop;
 
   color: $color-white;
   font-size: $banner-font-size-desktop;
@@ -42,10 +41,10 @@
   line-height: $line-height;
   text-align: center;
     
-  @media (max-width: 768px) {
+  @media (max-width: $breakpoint-mobile) {
     font-size: $banner-font-size-mobile;
     line-height: $banner-line-height-mobile;
-    padding: 0 $body-padding-mobile;
+    padding: $banner-padding-mobile;
     text-align: left;
     max-width: 80%;
   }

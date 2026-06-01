@@ -9,7 +9,7 @@
   overflow: hidden;
   text-decoration: none;
 
-  @media (max-width: 768px) {
+  @media (max-width: $breakpoint-mobile) {
     width: 100%;
     height: $card-height-mobile;
   }

@@ -1,13 +1,13 @@
 @use '../../styles/variables' as *;
 
 .home {
-  padding: 0 $body-padding-desktop;
+  padding: $home-padding-desktop;
   display: flex;
   flex-direction: column;
   gap: $home-gap-desktop;
 
-  @media (max-width: 768px) {
-    padding: 0 $body-padding-mobile;
+  @media (max-width: $breakpoint-mobile) {
+    padding: $home-padding-mobile;
     gap: $home-gap-mobile;
   }
 }

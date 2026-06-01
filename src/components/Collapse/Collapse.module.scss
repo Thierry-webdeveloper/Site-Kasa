@@ -1,0 +1,70 @@
+@use '../../styles/variables' as *;
+
+.collapse {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: $collapse-header-height-desktop;
+  padding: $collapse-header-padding-desktop;
+  background-color: $color-primary;
+  border: none;
+  border-radius: $collapse-border-radius;
+  cursor: pointer;
+
+  @media (max-width: $breakpoint-mobile) {
+    height: $collapse-header-height-mobile;
+    padding: $collapse-header-padding-mobile;
+  }
+}
+
+.title {
+  font-family: $font-family;
+  font-size: $collapse-font-size-desktop;
+  font-weight: $collapse-font-weight-title;
+  line-height: $line-height;
+  color: $color-white;
+  text-align: left;
+
+  @media (max-width: $breakpoint-mobile) {
+    font-size: $collapse-font-size-mobile;
+  }
+}
+
+.arrow {
+  flex-shrink: 0;
+  width: $collapse-arrow-width-desktop;
+  height: $collapse-arrow-height-desktop;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  transform: rotate(0deg);
+
+  @media (max-width: $breakpoint-mobile) {
+    width: $collapse-arrow-width-mobile;
+    height: $collapse-arrow-height-mobile;
+  }
+}
+
+.arrowOpen {
+  transform: rotate(180deg);
+}
+
+.content {
+  background-color: $collapse-content-bg;
+  border-radius: $collapse-content-border-radius-desktop;
+  padding: $collapse-content-padding;
+  font-family: $font-family;
+  font-size: $collapse-content-font-size-desktop;
+  font-weight: 400;
+  line-height: $line-height;
+  color: $color-black;
+
+  @media (max-width: $breakpoint-mobile) {
+    border-radius: $collapse-content-border-radius-mobile;
+    font-size: $collapse-content-font-size-mobile;
+  }
+}

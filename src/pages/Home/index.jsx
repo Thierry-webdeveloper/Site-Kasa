@@ -8,7 +8,7 @@ import styles from './Home.module.scss'
 function Home() {
   return (
     <main className={styles.home}>
-      <Banner imageUrl={bannerImage} alt="">
+      <Banner imageUrl={bannerImage} alt="Bannière page Accueil" overlayOpacity={0.6} >
         Chez vous, partout et ailleurs
       </Banner>
 

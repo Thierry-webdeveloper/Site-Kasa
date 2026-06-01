@@ -3,7 +3,7 @@ $max-width: 1440px;
 
 // Breakpoints
 $breakpoint-desktop: 1440px;
-$breakpoint-mobile: 375px;
+$breakpoint-mobile: 992px;  /*768*/
 
 // Couleurs
 $color-primary: #FF6060;
@@ -14,18 +14,18 @@ $color-background: #FFFFFF;
 // Espacements Body
 $body-margin-top-desktop: 45px;
 $body-margin-top-mobile: 20px;
-$body-padding-desktop: 100px;
-$body-padding-mobile: 20px;
 $body-gap-desktop: 50px;
 $body-gap-mobile: 27px;
 
 // Header Desktop
+$header-padding-desktop: 0 100px;
 $header-logo-width-desktop: 210px;
 $header-logo-height-desktop: 68px;
 $header-nav-margin-desktop: 17px;
 $header-nav-gap-desktop: 57px;
 
 // Header Mobile
+$header-padding-mobile: 0 20px;
 $header-logo-width-mobile: 145px;
 $header-logo-height-mobile: 47px;
 $header-nav-margin-mobile: 15px;
@@ -52,17 +52,21 @@ $font-size-footer-desktop: 24px;
 $font-size-footer-mobile: 12px;
 
 // Bannière Desktop
+$banner-padding-desktop: 0 100px;
 $banner-height-desktop: 223px;
 $banner-border-radius-desktop: 25px;
 $banner-font-size-desktop: 48px;
 
 // Bannière Mobile
+$banner-padding-mobile: 0 20px;
 $banner-height-mobile: 111px;
 $banner-border-radius-mobile: 10px;
 $banner-font-size-mobile: 24px;
 $banner-line-height-mobile: 100%;
 
 // Home
+$home-padding-desktop: 50px 100px;
+$home-padding-mobile: 27px 20px;
 $home-gap-desktop: 43px;
 $home-gap-mobile: 22px;
 
@@ -81,3 +85,46 @@ $card-height-desktop: 340px;
 
 // Cards Mobile
 $card-height-mobile: 255px;
+
+// About Desktop
+$about-padding-desktop: 38px 100px;
+$about-gap-desktop: 38px;
+
+// About Mobile
+$about-padding-mobile: 19px 20px;
+$about-gap-mobile: 19px;
+
+// Collapse container Desktop
+$collapse-container-padding-desktop: 109px;
+$collapse-container-gap-desktop: 30px;
+
+// Collapse container Mobile
+$collapse-container-gap-mobile: 20px;
+
+// Collapse header Desktop
+$collapse-border-radius: 5px;
+$collapse-header-height-desktop: 52px;
+$collapse-header-padding-desktop: 10px 24px 10px 15px;
+$collapse-font-size-desktop: 24px;
+$collapse-font-weight-title: 700;
+
+// Collapse header Mobile
+$collapse-header-height-mobile: 30px;
+$collapse-header-padding-mobile: 10px 12px 10px 10px;
+$collapse-font-size-mobile: 13px;
+
+// Collapse contenu
+$collapse-content-bg: rgba(246, 246, 246, 0.45);
+$collapse-content-border-radius-desktop: 10px 10px 5px 5px;
+$collapse-content-border-radius-mobile: 5px;
+$collapse-content-font-size-desktop: 18px;
+$collapse-content-font-size-mobile: 12px;
+$collapse-content-padding: 10px 20px;
+
+// Flèche Collapse Desktop
+$collapse-arrow-width-desktop: 24px;
+$collapse-arrow-height-desktop: 14px;
+
+// Flèche Collapse Mobile
+$collapse-arrow-width-mobile: 16px;
+$collapse-arrow-height-mobile: 10px;
