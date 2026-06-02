@@ -41,7 +41,7 @@
   height: $collapse-arrow-height-desktop;
   object-fit: contain;
   transition: transform 0.3s ease;
-  transform: rotate(0deg);
+  transform: rotate(-90deg);
 
   @media (max-width: $breakpoint-mobile) {
     width: $collapse-arrow-width-mobile;
@@ -50,7 +50,7 @@
 }
 
 .arrowOpen {
-  transform: rotate(180deg);
+  transform: rotate(90deg);
 }
 
 .content {

@@ -123,11 +123,11 @@ $collapse-content-padding: 10px 20px;
 
 // Flèche Collapse Desktop
 $collapse-arrow-width-desktop: 24px;
-$collapse-arrow-height-desktop: 14px;
+$collapse-arrow-height-desktop: 24px;
 
 // Flèche Collapse Mobile
 $collapse-arrow-width-mobile: 16px;
-$collapse-arrow-height-mobile: 10px;
+$collapse-arrow-height-mobile: 16px;
 
 // Error 404 Desktop
 $error404-spacing-desktop: 139px;
@@ -138,3 +138,22 @@ $error404-link-size-desktop: 18px;
 $error404-spacing-mobile: 113px;
 $error404-font-size-mobile: 18px;
 $error404-link-size-mobile: 14px;
+
+// Logement
+$logement-padding-desktop: 50px 100px;
+
+// Slideshow Desktop
+$slideshow-height-desktop:         415px;
+$slideshow-radius:                  25px;
+$slideshow-arrow-width:             79px;
+$slideshow-arrow-height:            47px;
+$slideshow-counter-height:          24px;
+$slideshow-counter-bottom:          25px;
+$slideshow-inner-padding:           25px;
+$slideshow-counter-font-size:       18px;
+
+// Slideshow Mobile
+$slideshow-height-mobile:          255px;
+$slideshow-radius-mobile:           10px;
+$slideshow-arrow-width-mobile:      24px;
+$slideshow-arrow-height-mobile:     24px;

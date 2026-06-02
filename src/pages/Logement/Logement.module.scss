@@ -1,0 +1,13 @@
+@use '../../styles/variables' as *;
+
+.logement {
+  padding: $logement-padding-desktop;
+  display: flex;
+  flex-direction: column;
+  gap: $home-gap-desktop;
+
+  @media (max-width: $breakpoint-mobile) {
+    padding: $home-padding-mobile;
+    gap: $home-gap-mobile;
+  }
+}

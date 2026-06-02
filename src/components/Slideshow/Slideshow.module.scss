@@ -1,0 +1,76 @@
+@use '../../styles/variables' as *;
+
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: $slideshow-height-desktop;
+  border-radius: $slideshow-radius;
+  overflow: hidden;
+  background-color: $color-primary;
+
+  @media (max-width: $breakpoint-mobile) {
+    height: $slideshow-height-mobile;
+    border-radius: $slideshow-radius-mobile;
+  }
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+//   padding: $slideshow-inner-padding;
+
+  img {
+    width: $slideshow-arrow-width;
+    height: $slideshow-arrow-height;
+    display: block;
+
+    @media (max-width: $breakpoint-mobile) {
+      width: $slideshow-arrow-width-mobile;
+      height: $slideshow-arrow-height-mobile;
+    }
+  }
+}
+
+.arrowBack {
+  left: 0;
+
+  img {
+    transform: rotate(180deg);
+  }
+}
+
+.arrowForward {
+  right: 0;
+
+  img {
+    transform: rotate(0deg);
+  }
+}
+
+.counter {
+  position: absolute;
+  bottom: $slideshow-counter-bottom;
+  left: 50%;
+  transform: translateX(-50%);
+  height: $slideshow-counter-height;
+  color: $color-white;
+  font-size: $slideshow-counter-font-size;
+  font-weight: $font-weight-medium;
+  line-height: $line-height;
+  text-align: center;
+  margin: 0;
+
+  @media (max-width: $breakpoint-mobile) {
+    display: none;
+  }
+}
