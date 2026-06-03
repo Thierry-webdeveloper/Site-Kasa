@@ -4,10 +4,209 @@
   padding: $logement-padding-desktop;
   display: flex;
   flex-direction: column;
-  gap: $home-gap-desktop;
+  // gap: $home-gap-desktop;
 
   @media (max-width: $breakpoint-mobile) {
     padding: $home-padding-mobile;
-    gap: $home-gap-mobile;
+    // gap: $home-gap-mobile;
+  }
+}
+
+// ── Bandeau infos ──────────────────────────────────────────
+.infos {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 30px;
+
+  @media (max-width: $breakpoint-mobile) {
+    flex-direction: column;
+    margin-top: 15px;
+  }
+}
+
+// ── Colonne gauche ─────────────────────────────────────────
+.infoLeft {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  height: 51px;
+  font-family: $font-family;
+  font-weight: $font-weight-medium;
+  font-size: 36px;
+  line-height: $line-height;
+  color: $color-primary;
+  display: flex;
+  align-items: flex-end;
+
+  @media (max-width: $breakpoint-mobile) {
+    height: 46px;
+    font-size: 18px;
+  }
+}
+
+.location {
+  height: 26px;
+  font-family: $font-family;
+  font-weight: $font-weight-medium;
+  font-size: 18px;
+  line-height: $line-height;
+  color: $color-black;
+  display: flex;
+  align-items: flex-end;
+
+  @media (max-width: $breakpoint-mobile) {
+    height: 22px;
+    font-size: 14px;
+  }
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  height: 25px;
+  gap: 10px;
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+
+  @media (max-width: $breakpoint-mobile) {
+    height: 18px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    height: auto;
+  }
+}
+
+.tag {
+  height: 100%;
+  width: 155px;
+  border-radius: 10px;
+  background-color: $color-primary;
+  display: block;
+  text-align: center;
+  line-height: 25px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 8px;
+  box-sizing: border-box;
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 14px;
+  color: $color-white;
+
+  @media (max-width: $breakpoint-mobile) {
+    width: 84px;
+    border-radius: 5px;
+    font-size: 10px;
+    line-height: 18px;
+    padding: 0 6px;
+  }
+}
+
+// ── Colonne droite ─────────────────────────────────────────
+.infoRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 24px;
+
+  @media (max-width: $breakpoint-mobile) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 24px;
+  }
+}
+
+.host {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  height: 64px;
+  gap: 10px;
+
+  @media (max-width: $breakpoint-mobile) {
+    height: 33px;
+    order: 2;
+  }
+}
+
+.hostName {
+  height: 52px;
+  font-family: $font-family;
+  font-weight: $font-weight-medium;
+  font-size: 18px;
+  line-height: $line-height;
+  text-align: right;
+  color: $color-primary;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  @media (max-width: $breakpoint-mobile) {
+    height: 33px;
+    font-size: 12px;
+  }
+}
+
+.hostPicture {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #C4C4C4;
+  object-fit: cover;
+
+  @media (max-width: $breakpoint-mobile) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.rating {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  margin-top: 21px;
+
+  img {
+    width: 36px;
+    height: 36px;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    margin-top: 0;
+    gap: 2px;
+    order: 1;
+    align-self: center;
+
+    img {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
+// ── Collapses ──────────────────────────────────────────────
+.collapses {
+  display: flex;
+  flex-direction: row;
+  gap: $home-gap-desktop;
+  margin-top: 24px;
+
+  // Chaque Collapse prend la moitié disponible (répartition proportionnelle)
+  > * {
+    flex: 1;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 13px;
   }
 }

@@ -22,7 +22,15 @@ function Collapse({ title, content }) {
 
       {isOpen && (
         <div className={styles.content}>
-          <p>{content}</p>
+          {Array.isArray(content) ? (
+            <ul>
+              {content.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          ) : (
+            <p>{content}</p>
+          )}
         </div>
       )}
     </div>
