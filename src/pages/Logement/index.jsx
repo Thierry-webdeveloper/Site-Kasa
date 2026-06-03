@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { useParams, Navigate } from 'react-router-dom'
 import logements from '../../data/logements.json'
 import Slideshow from '../../components/Slideshow'
 import Collapse from '../../components/Collapse'
@@ -9,6 +9,11 @@ import starEmpty from '../../assets/star-empty.svg'
 function Logement() {
   const { id } = useParams()
   const logement = logements.find((logement) => logement.id === id)
+
+  // id invalide (la valeur dans l'URL ne correspond à aucune donnée) → redirection
+  if (!logement) {
+    return <Navigate to="/error404" />
+  }
 
   return (
     <main className={styles.logement}>
