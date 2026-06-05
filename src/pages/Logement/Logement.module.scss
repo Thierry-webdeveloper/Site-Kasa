@@ -32,7 +32,6 @@
 }
 
 .title {
-  height: 51px;
   font-family: $font-family;
   font-weight: $font-weight-medium;
   font-size: 36px;
@@ -66,17 +65,14 @@
 .tags {
   display: flex;
   flex-direction: row;
-  height: 25px;
   gap: 10px;
   margin-top: 20px;
   list-style: none;
-  padding: 0;
+  flex-wrap: wrap;
+  height: auto;
 
   @media (max-width: $breakpoint-mobile) {
-    height: 18px;
     margin-top: 10px;
-    flex-wrap: wrap;
-    height: auto;
   }
 }
 
