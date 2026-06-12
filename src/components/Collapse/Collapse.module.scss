@@ -50,7 +50,7 @@
 }
 
 .arrowOpen {
-  transform: rotate(90deg);
+  transform: rotate(-270deg);
 }
 
 .content {
@@ -62,6 +62,11 @@
   font-weight: 400;
   line-height: $line-height;
   color: $color-black;
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
 
   @media (max-width: $breakpoint-mobile) {
     border-radius: $collapse-content-border-radius-mobile;
