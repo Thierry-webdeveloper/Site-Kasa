@@ -1,13 +1,16 @@
-import { useState } from 'react'
+import { useState, useId } from 'react'
 import arrow from '../../assets/arrow.svg'
 import styles from './Collapse.module.scss'
 
 function Collapse({ title, content }) {
   const [isOpen, setIsOpen] = useState(false)
+  const contentId = useId() // identifiant unique, relie le bouton à son contenu
 
   return (
     <div className={styles.collapse}>
       <button
+        type="button"
+        aria-controls={contentId}
         className={styles.header}
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
@@ -21,7 +24,7 @@ function Collapse({ title, content }) {
       </button>
 
       {isOpen && (
-        <div className={styles.content}>
+        <div id={contentId} className={styles.content}>
           {Array.isArray(content) ? (
             <ul>
               {content.map((item) => (

@@ -18,7 +18,7 @@ function Logement() {
   return (
     <main className={styles.logement}>
       {/* Carrousel */}
-      <Slideshow pictures={logement.pictures} />
+      <Slideshow pictures={logement.pictures} title={logement.title} />
 
       {/* Bandeau : titre + localisation à gauche / hôte + étoiles à droite */}
       <div className={styles.infos}>
@@ -53,7 +53,7 @@ function Logement() {
           </div>
 
           {/* Étoiles */}
-          <div className={styles.rating}>
+          <div className={styles.rating} role="img" aria-label={`Note : ${logement.rating} sur 5`}>
             {[1, 2, 3, 4, 5].map((star) => (
               <img
                 key={star}
