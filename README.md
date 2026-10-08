@@ -19,13 +19,16 @@ et d'un fichier de données JSON.
 - Menu déroulant animé (Collapse)
 - Navigation entre les pages via React Router
 - Page d'erreur 404 pour les routes inexistantes
+- Carrousel accessible : navigation au clavier (flèches gauche et droite), boutons nommés, changement de photo annoncé aux lecteurs d'écran
+- Menus déroulants reliés à leur contenu (`aria-expanded`, `aria-controls`)
 
 ## 🛠️ Stack technique
 
-- React 18
-- React Router 6
+- React 19
+- React Router 7
 - Sass
 - Vite
+- Données : fichiers JSON importés dans le code (aucun serveur nécessaire)
 
 ## ⚙️ Installation
 
@@ -43,7 +46,18 @@ npm install
 npm run dev
 ```
 
-L'application tourne sur `http://localhost:5173`
+## 🚀 Déploiement
+
+Le site est publié sur GitHub Pages par un workflow GitHub Actions (`.github/workflows/deploy.yml`) à chaque publication sur la branche `main`.
+
+- `base: '/Site-Kasa/'` dans `vite.config.js` et `basename` dans le routeur : le site est servi dans un sous-dossier.
+- Le build copie `index.html` en `404.html`, pour que les liens directs et les rechargements fonctionnent.
+
+```bash
+# Construire et prévisualiser la version de production
+npm run build
+npm run preview   # http://localhost:4173/Site-Kasa/
+```
 
 ## 🗺️ Pages de l'application
 
@@ -54,7 +68,8 @@ L'application tourne sur `http://localhost:5173`
 
 ## 🔗 Liens
 
-- **Repo GitHub** : https://github.com/Thierry-webdeveloper/Site-Kasa.git
+- **Site en ligne** : https://thierry-webdeveloper.github.io/Site-Kasa/
+- **Dépôt GitHub** : https://github.com/Thierry-webdeveloper/Site-Kasa
 
 ---
 

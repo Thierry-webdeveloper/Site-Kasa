@@ -47,7 +47,7 @@ function Logement() {
             </p>
             <img
               src={logement.host.picture}
-              alt={logement.host.name}
+              alt=""
               className={styles.hostPicture}
             />
           </div>
