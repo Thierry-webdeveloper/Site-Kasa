@@ -16,6 +16,8 @@ const router = createBrowserRouter([
       { path: '*',             element: <Error404 /> },
     ],
   },
-])
+], {
+  basename: import.meta.env.BASE_URL, // valeur de « base » fournie par Vite
+})
 
 export default router
